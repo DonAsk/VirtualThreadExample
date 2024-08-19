@@ -40,7 +40,7 @@ public class ReadLocalFileTask implements Callable<String> {
         }
 
         long timeTakenMs = System.currentTimeMillis() - start;
-        String retMsg = "time >> " + timeTakenMs + "ms >> " + Thread.currentThread().getName() + " id : " + Thread.currentThread().getId() + " done.";
+        String retMsg = "time >> " + timeTakenMs + "ms >> " + Thread.currentThread().getName() + " id : " + Thread.currentThread().threadId() + " done.";
         return retMsg;
     }
 

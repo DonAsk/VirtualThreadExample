@@ -9,7 +9,7 @@ public class SleepThreadTask implements Callable<String> {
         long start = System.currentTimeMillis();
         Thread.sleep(1000);
         long timeTakenMs = System.currentTimeMillis() - start;
-        String retMsg = "time >> " + timeTakenMs + "ms >> " + Thread.currentThread().getName() + " id : " + Thread.currentThread().getId() + " done.";
+        String retMsg = "time >> " + timeTakenMs + "ms >> " + Thread.currentThread().getName() + " id : " + Thread.currentThread().threadId() + " done.";
         return retMsg; 
     }
 
