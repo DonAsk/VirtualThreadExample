@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
 
 public class MyTestCase {
 
-    private static final int NUM_OF_THREADS = 10;
+    private static final int NUM_OF_THREADS = 100;
     // private static final int NUM_OF_THREADS = 100_000;    
 
     private static final int CHAR_TO_SHOW = 70;
@@ -29,8 +29,8 @@ public class MyTestCase {
         testNewCachedThreadPool();
         testNewVirtualThreadPerTask();
 
-        System.out.println("NewCachedThreadPool Time taken: " + newCachedThreadPoolTime);
-        System.out.println("NewVirtualThreadPerTask Time taken: " + newVirtualThreadPerTaskTime);
+        System.out.println("NewCachedThreadPool Time taken: " + newCachedThreadPoolTime + "ms");
+        System.out.println("NewVirtualThreadPerTask Time taken: " + newVirtualThreadPerTaskTime + "ms");
     }
 
     private void testNewCachedThreadPool() {
